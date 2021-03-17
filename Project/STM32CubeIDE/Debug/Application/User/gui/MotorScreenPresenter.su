@@ -1,0 +1,5 @@
+MotorScreenPresenter.hpp:28:13:MotorScreenPresenter::~MotorScreenPresenter()	0	static
+MotorScreenPresenter.cpp:10:6:virtual void MotorScreenPresenter::activate()	0	static
+MotorScreenPresenter.hpp:28:13:virtual MotorScreenPresenter::~MotorScreenPresenter()	8	static
+MotorScreenPresenter.hpp:28:13:virtual void* MotorScreenPresenter::_ZThn4_N20MotorScreenPresenterD1Ev()	0	static
+MotorScreenPresenter.cpp:4:1:MotorScreenPresenter::MotorScreenPresenter(MotorScreenView&)	8	static

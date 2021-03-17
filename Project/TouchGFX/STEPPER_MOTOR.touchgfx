@@ -1,0 +1,442 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "background.png",
+            "Alpha": 255,
+            "Name": "bkg",
+            "X": 0,
+            "Y": 0,
+            "Width": 240,
+            "Height": 320,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "wheel_selector_overlay.png",
+            "Alpha": 255,
+            "Name": "imgStepper",
+            "X": 20,
+            "Y": 110,
+            "Width": 200,
+            "Height": 128,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "TGFX_shadow_logo.png",
+            "Alpha": 255,
+            "Name": "logo",
+            "X": 20,
+            "Y": 31,
+            "Width": 200,
+            "Height": 51,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "gotoMenu.png",
+            "Released": "gotoMenu.png",
+            "Alpha": 122,
+            "Name": "btnGoToMotorScreen",
+            "X": 165,
+            "Y": 261,
+            "Width": 55,
+            "Height": 42,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId5",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textLight",
+            "X": 59,
+            "Y": 160,
+            "Width": 133,
+            "Height": 26,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnGoToMotorScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MotorScreen"
+            }
+          }
+        ],
+        "Name": "MainScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "background.png",
+            "Alpha": 255,
+            "Name": "bkg",
+            "X": 0,
+            "Y": 0,
+            "Width": 240,
+            "Height": 320,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "lftbtnpressed.png",
+            "Released": "lftbtn.png",
+            "Alpha": 255,
+            "Name": "btnGoToMainScreen",
+            "X": 0,
+            "Y": 121,
+            "Width": 33,
+            "Height": 79,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Slider",
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__designer\\Blue_Slider_Horizontal_Small_slider_horizontal_small_fill.png",
+            "BackgroundSelected": "__designer\\Blue_Slider_Horizontal_Small_slider_horizontal_small_back.png",
+            "Indicator": "__designer\\Dark_Slider_Horizontal_Small_Indicators_slider_horizontal_small_square_knob.png",
+            "BackgroundX": 3,
+            "BackgroundY": 7,
+            "IndicatorPos": 1,
+            "IndicatorMax": 130,
+            "IndicatorMin": 0,
+            "ValueMax": 14,
+            "ValueMin": 0,
+            "InitValue": 0,
+            "Name": "sliderRPM",
+            "X": 33,
+            "Y": 277,
+            "Width": 184,
+            "Height": 35,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Dark_Togglebars_Toggle_large_button_On.png",
+            "Released": "__designer\\Dark_Togglebars_Toggle_large_button_Off.png",
+            "Alpha": 255,
+            "Name": "tglBtnMotorFull",
+            "X": 56,
+            "Y": 59,
+            "Width": 128,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 63,
+            "Y": 34,
+            "Width": 119,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Dark_Togglebars_Toggle_large_button_On.png",
+            "Released": "__designer\\Dark_Togglebars_Toggle_large_button_Off.png",
+            "Alpha": 255,
+            "Name": "tglBtnMotorHalf",
+            "X": 57,
+            "Y": 141,
+            "Width": 128,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Dark_Togglebars_Toggle_large_button_On.png",
+            "Released": "__designer\\Dark_Togglebars_Toggle_large_button_Off.png",
+            "Alpha": 255,
+            "Name": "tglBtnMotorWave",
+            "X": 57,
+            "Y": 222,
+            "Width": 128,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1_1",
+            "X": 57,
+            "Y": 197,
+            "Width": 130,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1_2",
+            "X": 59,
+            "Y": 116,
+            "Width": 122,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnGoToMainScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "MainScreen"
+            }
+          },
+          {
+            "InteractionName": "startMotorFullDrive",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tglBtnMotorFull"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include \"mxconstants.h\"\r\n#include \"stm32f4xx_hal.h\"",
+              "Code": "int i;\r\nwhile ((i++ < 5) && (sliderRPM.getValue() > 0))\r\n{\r\n/* Motor pas cu pas */\r\n\tfor(int i = 0; i<512; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\t\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\t}\r\nHAL_Delay(1000);\r\n}\r\ntglBtnMotorFull.forceState(false);"
+            }
+          },
+          {
+            "InteractionName": "startMotorWaveDrive",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tglBtnMotorWave"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include \"main.h\"",
+              "Code": "int i;\r\nwhile ((i++ < 5) && (sliderRPM.getValue() > 0))\r\n{\r\n/* Motor pas cu pas */\r\n\tfor(int i = 0; i < 512; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\t}\r\n\tHAL_Delay(1000);\r\n}\r\ntglBtnMotorWave.forceState(false);"
+            }
+          },
+          {
+            "InteractionName": "startMotorHalf",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tglBtnMotorHalf"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "",
+              "Code": "int i;\r\nwhile ((i++ < 5) && (sliderRPM.getValue() > 0))\r\n{\r\n/* Motor pas cu pas */\r\n\tfor(int i = 0; i<512; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\t}\r\n\t\r\n\tHAL_Delay(1000);\r\n\r\n\tfor(int i = 0; i<512; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port,PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port,PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port,PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port,PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(sliderRPM.getValue());\r\n\t}\r\n\tHAL_Delay(1000);\r\n}\r\ntglBtnMotorHalf.forceState(false);"
+            }
+          }
+        ],
+        "Name": "MotorScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      }
+    ],
+    "Name": "STM32F429I-DISCO",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "MainScreen",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../STM32F429I-DISCO.ioc --platform=m4",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4"
+  },
+  "Version": "4.16.0",
+  "CreatedBy": "4.16.0"
+}

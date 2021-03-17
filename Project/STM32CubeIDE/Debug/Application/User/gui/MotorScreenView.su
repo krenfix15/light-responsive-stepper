@@ -1,0 +1,8 @@
+Screen.hpp:107:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:147:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:157:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+MotorScreenView.hpp:11:13:MotorScreenView::~MotorScreenView()	0	static
+MotorScreenView.cpp:13:6:virtual void MotorScreenView::tearDownScreen()	0	static
+MotorScreenView.cpp:8:6:virtual void MotorScreenView::setupScreen()	0	static
+MotorScreenView.hpp:11:13:virtual MotorScreenView::~MotorScreenView()	8	static
+MotorScreenView.cpp:3:1:MotorScreenView::MotorScreenView()	8	static

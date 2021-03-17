@@ -1,0 +1,2 @@
+void RoutineInit();
+void Routine();
