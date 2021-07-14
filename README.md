@@ -1,5 +1,5 @@
 # light-responsive-stepper
-Controlling a stepper motor with light using STM32F429I-DISC1 dev board.
+Controlling a stepper motor with light using STM32F429I-DISC1 dev board.                                                                                                           
 It is basically a reversed "flower", it is searching for less light.                                                                                                              
 A demonstration video can be found in the repository.
 
