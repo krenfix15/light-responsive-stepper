@@ -1,5 +1,10 @@
 #include <gui/mainscreen_screen/MainScreenView.hpp>
 #include "string.h"
+#include "mxconstants.h"
+#include "main.h"
+
+int analogValuePA0_Graph = 0;
+int analogValuePC1_Graph = 0;
 
 MainScreenView::MainScreenView()
 {
@@ -16,9 +21,38 @@ void MainScreenView::tearDownScreen()
     MainScreenViewBase::tearDownScreen();
 }
 
-void MainScreenView::analogUpdate(uint32_t value)
+/***********************************************************//**
+*
+* \descriere analogUpdatePA0 
+* - transmite datele preluate de senzorul de lumină conectat la pinul PA0
+* către interfață
+*
+***************************************************************/
+void MainScreenView::analogUpdatePA0(uint32_t value)
 {
-	memset(&textLightBuffer,0,TEXTLIGHT_SIZE);
-	Unicode::snprintf(textLightBuffer,sizeof(textLightBuffer),"%d", value);
-	textLight.invalidate();
+	memset(&textLightSensorPA0Buffer, 0, TEXTLIGHTSENSORPA0_SIZE);
+	Unicode::snprintf(textLightSensorPA0Buffer, sizeof(textLightSensorPA0Buffer), "%d", value / ANALOG_CALIB_VALUE);
+	textLightSensorPA0.invalidate();
+}
+
+/***********************************************************//**
+*
+* \descriere analogUpdatePA0 
+* - transmite datele preluate de senzorul de lumină conectat la pinul PC1
+* către interfață
+*
+***************************************************************/
+void MainScreenView::analogUpdatePC1(uint32_t value)
+{
+	memset(&textLightSensorPC1Buffer, 0, TEXTLIGHTSENSORPC1_SIZE);
+	Unicode::snprintf(textLightSensorPC1Buffer, sizeof(textLightSensorPC1Buffer), "%d", value / ANALOG_CALIB_VALUE);
+	textLightSensorPC1.invalidate();
+}
+
+void MainScreenView::handleTickEvent()
+{
+	if(analogValuePC1 > analogValuePA0)
+		dynamicGraph1.addDataPoint(analogValuePC1 - analogValuePA0);
+	else
+		dynamicGraph1.addDataPoint(analogValuePA0 - analogValuePC1);
 }
