@@ -11,12 +11,15 @@ public:
     
     virtual ~ModelListener() {}
 
-    virtual void analogUpdate(uint32_t value) {}
-
+    virtual void analogUpdatePA0(uint32_t value) {}
+	
+	virtual void analogUpdatePC1(uint32_t value) {}
+		
     void bind(Model* m)
     {
         model = m;
     }
+	
 protected:
     Model* model;
 };

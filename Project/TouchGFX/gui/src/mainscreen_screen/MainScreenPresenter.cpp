@@ -17,7 +17,12 @@ void MainScreenPresenter::deactivate()
 
 }
 
-void MainScreenPresenter::analogUpdate(uint32_t value)
+void MainScreenPresenter::analogUpdatePA0(uint32_t value)
 {
-	view.analogUpdate(value);
+	view.analogUpdatePA0(value);
+}
+
+void MainScreenPresenter::analogUpdatePC1(uint32_t value)
+{
+	view.analogUpdatePC1(value);
 }

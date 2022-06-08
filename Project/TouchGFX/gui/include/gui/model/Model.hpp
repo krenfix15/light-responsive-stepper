@@ -14,8 +14,15 @@ public:
     }
 
     void tick();
-    void analogUpdate();
-
+	
+	void moveStepperToRight();
+	
+	void moveStepperToLeft();
+	
+    void analogUpdatePA0();
+	
+	void analogUpdatePC1();
+	
 protected:
     ModelListener* modelListener;
 };
