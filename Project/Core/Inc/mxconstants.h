@@ -38,6 +38,17 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define NUMBER_OF_VALUES 10
+
+#define ANALOGIC_DIFFERENCE 125
+
+#define ANALOGIC_MAX_VALUE 800
+
+#define NUMBER_OF_STEPS 32
+
+#define DELAY_VALUE 2
+
+#define ANALOG_CALIB_VALUE 5
 
 #define PHASE1_Pin GPIO_PIN_2
 #define PHASE1_GPIO_Port GPIOE
@@ -47,6 +58,7 @@
 #define PHASE3_GPIO_Port GPIOE
 #define PHASE4_Pin GPIO_PIN_5
 #define PHASE4_GPIO_Port GPIOE
+
 
 /* USER CODE BEGIN Private defines */
 
