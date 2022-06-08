@@ -1,0 +1,377 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "MainScreen",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "bkg",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "btnGoToControlScreen",
+            "X": 171,
+            "Y": 269,
+            "Width": 55,
+            "Height": 42,
+            "Pressed": "gotoMenu.png",
+            "Released": "gotoMenu.png",
+            "Alpha": 122
+          },
+          {
+            "Type": "Image",
+            "Name": "overlayPC1",
+            "X": 23,
+            "Y": 73,
+            "Width": 194,
+            "Height": 49,
+            "RelativeFilename": "overlay.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLightSensorPC1",
+            "X": 54,
+            "Y": 84,
+            "Width": 133,
+            "Height": 26,
+            "TextId": "__SingleUse_HJMU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_KAAT",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "overlayPA0",
+            "X": 23,
+            "Y": 16,
+            "Width": 194,
+            "Height": 49,
+            "RelativeFilename": "overlay.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLightSensorPA0",
+            "X": 54,
+            "Y": 27,
+            "Width": 133,
+            "Height": 26,
+            "TextId": "__SingleUse_TQWF",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_9RIF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph1",
+            "X": 15,
+            "Y": 130,
+            "Width": 202,
+            "Height": 139,
+            "DataSeed": -1345482452,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 7,
+            "LabelSizeLeft": 20,
+            "GraphType": "GraphScroll",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 255,
+                  "Green": 237,
+                  "Blue": 97
+                }
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 50.0,
+              "LineWidth": 2
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 10.0,
+              "LineWidth": 1
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 50.0,
+              "LineWidth": 2
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 10.0,
+              "LineWidth": 1
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_IXJY",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnGoToControlScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ControlScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
+        "Name": "ControlScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "bkg",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "btnGoToMainScreen",
+            "Y": 121,
+            "Width": 33,
+            "Height": 79,
+            "Pressed": "lftbtnpressed.png",
+            "Released": "lftbtn.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "tglBtnControlMode",
+            "X": 61,
+            "Y": 102,
+            "Width": 128,
+            "Height": 38,
+            "InitialStatePressed": true,
+            "Pressed": "__designer\\Dark_Togglebars_Toggle_large_button_On.png",
+            "Released": "__designer\\Dark_Togglebars_Toggle_large_button_Off.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaAutomat",
+            "X": 41,
+            "Y": 80,
+            "Width": 169,
+            "Height": 22,
+            "TextId": "__SingleUse_HVKK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Button",
+            "Name": "btnMoveStepperToRight",
+            "X": 129,
+            "Y": 186,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Square_icon_button.png",
+            "Released": "__designer\\Dark_Buttons_Square_icon_button_pressed.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "btnMoveStepperToLeft",
+            "X": 60,
+            "Y": 186,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Square_icon_button.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtLeft",
+            "X": 85,
+            "Y": 205,
+            "Width": 10,
+            "Height": 22,
+            "TextId": "__SingleUse_A591",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 46,
+              "Green": 41,
+              "Blue": 41
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtRight",
+            "X": 153,
+            "Y": 205,
+            "Width": 13,
+            "Height": 22,
+            "TextId": "__SingleUse_45WD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 173,
+              "Green": 161,
+              "Blue": 161
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "goToMainScreen",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnGoToMainScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "MainScreen"
+            }
+          },
+          {
+            "InteractionName": "interactionStepToRight",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnMoveStepperToRight"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include \"mxconstants.h\"\r\n#include \"stm32f4xx_hal.h\"",
+              "Code": "if(isControlModeAuto == false)\r\n{\r\n\tfor(int i = 0; i < NUMBER_OF_STEPS; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\t}\r\n}\r\n"
+            }
+          },
+          {
+            "InteractionName": "interactionStepToLeft",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnMoveStepperToLeft"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "if(isControlModeAuto == false)\r\n{\r\n\tfor(int i = 0; i < NUMBER_OF_STEPS; i++)\r\n\t{\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_SET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\r\n\t\tHAL_GPIO_WritePin(PHASE1_GPIO_Port, PHASE1_Pin, GPIO_PIN_SET);\r\n\t\tHAL_GPIO_WritePin(PHASE2_GPIO_Port, PHASE2_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE3_GPIO_Port, PHASE3_Pin, GPIO_PIN_RESET);\r\n\t\tHAL_GPIO_WritePin(PHASE4_GPIO_Port, PHASE4_Pin, GPIO_PIN_RESET);\r\n\r\n\t\tHAL_Delay(DELAY_VALUE);\r\n\t}\r\n}\r\n"
+            }
+          },
+          {
+            "InteractionName": "tglControlMode",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tglBtnControlMode"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "",
+              "Code": "isControlModeAuto = !isControlModeAuto;"
+            }
+          },
+          {
+            "InteractionName": "goToGraphScreen",
+            "Trigger": {
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "STM32F429I-DISCO",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "MainScreen",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../STM32F429I-DISCO.ioc --platform=m4",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4"
+  },
+  "Version": "4.18.1",
+  "CreatedBy": "4.16.0"
+}
