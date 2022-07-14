@@ -1,7 +1,5 @@
 # light-responsive-stepper
-This project is an embedded system to control rotation according to light intensity.
-
-This is my thesis for finishing the CS degree.
+This is my thesis for finishing the CS degree and is represented by an embedded system to control rotation according to light intensity using the STM32F429I-DISC1 microcontroller.
 
 # What I Learned
 
