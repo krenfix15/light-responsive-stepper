@@ -1,5 +1,5 @@
 # light-responsive-stepper
-Embedded system to control rotation according to light intensity
+This project is an embedded system to control rotation according to light intensity.
 
 This is my thesis for finishing the CS degree.
 
