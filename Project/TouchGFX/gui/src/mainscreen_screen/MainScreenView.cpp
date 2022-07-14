@@ -49,10 +49,17 @@ void MainScreenView::analogUpdatePC1(uint32_t value)
 	textLightSensorPC1.invalidate();
 }
 
+/***********************************************************//**
+*
+* \descriere handleTickEvent 
+* - reîncarcă graficul cu puncte reprezentând diferența dintre valorile 
+* citite de senzori
+*
+***************************************************************/
 void MainScreenView::handleTickEvent()
 {
 	if(analogValuePC1 > analogValuePA0)
-		dynamicGraph1.addDataPoint(analogValuePC1 - analogValuePA0);
+		dGraphSensors.addDataPoint(analogValuePC1 - analogValuePA0);
 	else
-		dynamicGraph1.addDataPoint(analogValuePA0 - analogValuePC1);
+		dGraphSensors.addDataPoint(analogValuePA0 - analogValuePC1);
 }
